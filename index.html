@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supermarket Bill Calculator</title>
+</head>
+<body>
+  <h1>Supermarket Bill Calculator</h1>
+  <form method="POST">
+    <div>
+      <label>Item:</label>
+      <input type="text" name="item">
+      <label>Price:</label>
+      <input type="number" name="price" step="0.01">
+      <label>Quantity:</label>
+      <input type="number" name="qty">
+    </div>
+    <button type="submit">Calculate</button>
+  </form>
+  <hr>
+  <h2>Bill Summary</h2>
+  <p>Subtotal: ₹{{subtotal}}</p>
+  <p>Tax: ₹{{tax}}</p>
+  <p>Discount: ₹{{discount}}</p>
+  <p><strong>Total: ₹{{total}}</strong></p>
+</body>
+</html>
